@@ -1,0 +1,375 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muthyala Rakesh - B.Tech Student Portfolio">
+    <title>Muthyala Rakesh | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="hero fade-in">
+            <div class="status-pill">Available for Internship</div>
+            <h1>Muthyala Rakesh</h1>
+            <p class="role">B.Tech Student & Digital Builder</p>
+            <p class="bio">
+                I bridge the gap between complex technology and simple user experiences. 
+                Focusing on web development, simple AI integrations, and digital efficiency.
+            </p>
+            
+            <div class="btn-group">
+                <a href="resume.pdf" class="btn primary" download>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Resume
+                </a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </header>
+
+        <section class="section fade-in delay-1">
+            <h2 class="section-title">About</h2>
+            <p class="text-content">
+                I am an undergraduate engineering student driven by curiosity. My goal isn't just to write code, but to build useful things. I specialize in leveraging no-code/low-code platforms alongside standard web technologies to create functional solutions quickly. I am currently seeking opportunities to apply my skills in a real-world professional environment.
+            </p>
+        </section>
+
+        <section class="section fade-in delay-2">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skill-pill">Google Sites</div>
+                <div class="skill-pill">Notion Architecture</div>
+                <div class="skill-pill">HTML/CSS</div>
+                <div class="skill-pill">Resume Design</div>
+                <div class="skill-pill">Canva</div>
+                <div class="skill-pill">Generative AI Prompting</div>
+            </div>
+        </section>
+
+        <section class="section fade-in delay-2">
+            <h2 class="section-title">Education</h2>
+            <div class="card flat">
+                <div class="card-header">
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <span class="date-badge">Present</span>
+                </div>
+                <p class="text-content">Pursuing undergraduate studies with a focus on Engineering fundamentals.</p>
+            </div>
+        </section>
+
+        <section class="section fade-in delay-3">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="card project-card">
+                    <h3>Minimalist Resume Site</h3>
+                    <p>A responsive, high-performance static website designed for professional portfolio showcasing. Built with raw HTML/CSS for maximum speed and SEO.</p>
+                    <div class="tags">
+                        <span>Web Dev</span>
+                        <span>Design</span>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <h3>LinkedIn A/B Testing</h3>
+                    <p>An experiment analyzing user engagement on professional networks. Tested various digital resume formats to optimize click-through rates.</p>
+                    <div class="tags">
+                        <span>Analytics</span>
+                        <span>Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in delay-3">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-box">
+                <p>Ready to build something together?</p>
+                <a href="mailto:muthyalarakesh1736@gmail.com" class="email-link">muthyalarakesh1736@gmail.com</a>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rakesh-muthyala-4938142ab" target="_blank" class="social-btn">
+                        LinkedIn Profile ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="fade-in delay-3">
+            <p>&copy; 2025 Muthyala Rakesh.</p>
+        </footer>
+    </div>
+
+</body>
+</html><style>/* VARIABLES & RESET */
+:root {
+    --bg: #ffffff;
+    --text-main: #1a1a1a;
+    --text-muted: #666666;
+    --accent: #000000;
+    --card-bg: #f9f9fa;
+    --border: #eaeaea;
+    --font-sans: 'Inter', sans-serif;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* LAYOUT */
+.wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.section { margin-bottom: 5rem; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    opacity: 0; /* Hidden initially */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+/* HERO ELEMENTS */
+.status-pill {
+    display: inline-block;
+    background-color: #ecfdf5;
+    color: #047857;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #d1fae5;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+}
+
+/* BUTTONS */
+.btn-group { display: flex; gap: 1rem; }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.btn.primary {
+    background-color: var(--accent);
+    color: white;
+    border: 1px solid var(--accent);
+}
+
+.btn.primary:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border);
+}
+
+.btn.secondary:hover {
+    background-color: var(--card-bg);
+    border-color: #ccc;
+}
+
+/* SKILLS */
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-pill {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    transition: var(--transition);
+}
+
+.skill-pill:hover {
+    border-color: var(--text-main);
+    background: var(--card-bg);
+}
+
+/* CARDS & GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.card.flat { background: white; border: 1px solid var(--border); }
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.date-badge {
+    font-size: 0.75rem;
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #555;
+}
+
+.tags span {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #666;
+    background: #eee; /* Slightly darker than card bg */
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: var(--text-main);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-box p { color: #ccc; margin-bottom: 0.5rem; }
+
+.email-link {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.email-link:hover { text-decoration: underline; }
+
+.social-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.social-btn:hover { background: rgba(255,255,255,0.2); }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .project-grid { grid-template-columns: 1fr; }
+    .btn-group { flex-direction: column; }
+    .btn { width: 100%; justify-content: center; }
+    .contact-box { padding: 1.5rem; }
+    .email-link { font-size: 1rem; }
+}</style>
